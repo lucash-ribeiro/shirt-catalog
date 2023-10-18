@@ -125,19 +125,19 @@ namespace ShirtCatalog.Infrastructure.Persistence.Migrations
                         {
                             Id = 1,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820517217377.png"
+                            ImagePath = "638329820517217377.png"
                         },
                         new
                         {
                             Id = 2,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820517217377.png"
+                            ImagePath = "638329820517217378.png"
                         },
                         new
                         {
                             Id = 3,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820636101975.png"
+                            ImagePath = "638329820517217379.png"
                         });
                 });
 

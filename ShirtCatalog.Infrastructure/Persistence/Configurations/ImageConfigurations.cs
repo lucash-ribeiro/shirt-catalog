@@ -21,9 +21,9 @@ namespace ShirtCatalog.Infrastructure.Persistence.Configurations
             builder
                 .HasData(
                     //CH1 GLASS SHARDS CREWNECK
-                    new { Id = 1, IdVariation = 8, ImagePath = "~\\Upload\\Files\\638329820517217377.png" },
-                    new { Id = 2, IdVariation = 8, ImagePath = "~\\Upload\\Files\\638329820517217377.png" },
-                    new { Id = 3, IdVariation = 8, ImagePath = "~\\Upload\\Files\\638329820636101975.png" }
+                    new { Id = 1, IdVariation = 8, ImagePath = "638329820517217377.png" },
+                    new { Id = 2, IdVariation = 8, ImagePath = "638329820517217378.png" },
+                    new { Id = 3, IdVariation = 8, ImagePath = "638329820517217379.png" }
                );
         }
     }

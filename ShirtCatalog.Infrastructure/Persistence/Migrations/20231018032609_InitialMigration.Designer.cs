@@ -11,7 +11,7 @@ using ShirtCatalog.Infrastructure.Persistence;
 namespace ShirtCatalog.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ShirtCatalogDbContext))]
-    [Migration("20231015190145_InitialMigration")]
+    [Migration("20231018032609_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -128,19 +128,19 @@ namespace ShirtCatalog.Infrastructure.Persistence.Migrations
                         {
                             Id = 1,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820517217377.png"
+                            ImagePath = "638329820517217377.png"
                         },
                         new
                         {
                             Id = 2,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820517217377.png"
+                            ImagePath = "638329820517217378.png"
                         },
                         new
                         {
                             Id = 3,
                             IdVariation = 8,
-                            ImagePath = "~\\Upload\\Files\\638329820636101975.png"
+                            ImagePath = "638329820517217379.png"
                         });
                 });
 

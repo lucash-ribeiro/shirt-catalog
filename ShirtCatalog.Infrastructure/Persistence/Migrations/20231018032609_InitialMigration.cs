@@ -157,9 +157,9 @@ namespace ShirtCatalog.Infrastructure.Persistence.Migrations
                 columns: new[] { "Id", "IdVariation", "ImagePath" },
                 values: new object[,]
                 {
-                    { 1, 8, "~\\Upload\\Files\\638329820517217377.png" },
-                    { 2, 8, "~\\Upload\\Files\\638329820517217377.png" },
-                    { 3, 8, "~\\Upload\\Files\\638329820636101975.png" }
+                    { 1, 8, "638329820517217377.png" },
+                    { 2, 8, "638329820517217378.png" },
+                    { 3, 8, "638329820517217379.png" }
                 });
 
             migrationBuilder.CreateIndex(

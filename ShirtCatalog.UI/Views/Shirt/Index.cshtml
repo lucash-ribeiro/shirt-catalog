@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ShirtCatalog.UI.Models.ShirtViewModel>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>Shirts</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfColors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfFabrics)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfImages)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfColors)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfFabrics)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfImages)
+            </td>
+            <td>
+                @Html.ActionLink("Edit Images", "Details", new { id = item.Id, name = item.Name })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

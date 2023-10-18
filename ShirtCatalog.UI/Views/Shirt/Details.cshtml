@@ -3,15 +3,9 @@
 @{
     ViewData["Title"] = $"Shirt Details - {Model.Name}";
 }
-<!-- Using a CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-<!-- Bootstrap JS -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
@@ -23,7 +17,7 @@
 
     .image-wrapper {
         flex: 1;
-        margin: 10px; /* Add spacing between images */
+        margin: 10px;
     }
 
     .image-with-button {
@@ -32,10 +26,10 @@
     }
 
     .default-image-height {
-        max-width: 30%; /* Make images responsive */
+        max-width: 30%; 
         height: auto;
-        display: block; /* Add this property to make the image a block-level element */
-        margin: 0 auto; /* Center the image horizontally within the container */
+        display: block;
+        margin: 0 auto; 
     }
 
     .delete-button {
@@ -47,7 +41,7 @@
     }
 
         .delete-button i {
-            color: #ff0000; /* Set the desired color, e.g., red */
+            color: #ff0000; 
         }
 
     .image-wrapper:hover .delete-button {
@@ -55,14 +49,14 @@
     }
 
     .upload-button {
-        background: none; /* Remove the background */
-        border: none; /* Remove the border */
-        padding: 0; /* Remove padding */
+        background: none; 
+        border: none; 
+        padding: 0;
         cursor: pointer;
     }
 
     .icon-color {
-        color: darkgray; /* Set the icon color to blue */
+        color: darkgray; 
     }
 </style>
 
@@ -107,7 +101,6 @@
                                     <i class="fas fa-plus-circle icon-color"></i>
                                 </button>
 
-                                <!-- Modal for this variation -->
                                 <div class="modal fade" id="addImageModal-@item.IdVariation" tabindex="-1" role="dialog" aria-labelledby="addImageModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -118,7 +111,6 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <!-- Form for image upload for this specific variation -->
                                                 <form id="imageUploadForm-@item.IdVariation" enctype="multipart/form-data">
                                                     <div class="form-group">
                                                         <label for="imageFile-@item.IdVariation">Choose an image</label>
@@ -187,7 +179,7 @@
 
                     $.ajax({
                         type: 'POST',
-                        url: '/Shirt/UploadImage', // Replace with your controller URL
+                        url: '/Shirt/UploadImage',
                         data: formData,
                         processData: false,
                         contentType: false,
